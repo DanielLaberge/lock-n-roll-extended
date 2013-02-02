@@ -1,0 +1,19 @@
+CHANGELOG:
+
+Current version of Lock'n'Roll Extended is 1.2.
+Please visit https://github.com/TiDaN/lock-n-roll-extended for updates
+
+Version 1.2:
+    * New:      LNR now allows you to specify which status should be set when the workstation locks
+	
+Version 1.1:
+    * New:      LNR restores statuses that it replaces when the workstation locks
+    * Bugfix:   LNR no longer replaces Unavailable, Offline, or Invisible statuses
+    * Misc:     Documented the source code
+    * Misc:     Updated URLs to point to the specific LNR category at my site
+
+Version 1.0.1:
+    * Bugfix:   Fixed crash caused when a message was received while LNR was active
+
+Version 1.0:
+    Initial release
