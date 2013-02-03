@@ -318,7 +318,7 @@ static PurplePluginInfo info =
     "Change status on workstation lock",
     "Sets specified account statuses on workstation lock",
     "Author: Chris Sammis (csammis@gmail.com) Extended by Daniel Laberge (daniel@sharpcoding.com)",
-    "https://github.com/TiDaN/lock-n-roll-extended",
+    "https://github.com/DanielLaberge/lock-n-roll-extended",
     plugin_load,
     plugin_unload,
     NULL,
