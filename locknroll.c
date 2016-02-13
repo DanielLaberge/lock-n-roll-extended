@@ -128,6 +128,7 @@ static LRESULT CALLBACK LnrWindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARA
         switch(wParam)
         {
         case WTS_SESSION_LOCK:
+        case WTS_REMOTE_DISCONNECT:
 
             saved_status = purple_savedstatus_new(NULL, purple_prefs_get_int(LNR_PREF_STATUS));
             purple_savedstatus_set_message(saved_status, purple_prefs_get_string(LNR_PREF_MESSAGE));
@@ -164,7 +165,9 @@ static LRESULT CALLBACK LnrWindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARA
             accts = NULL;
 
             break;
+            
         case WTS_SESSION_UNLOCK:
+        case WTS_REMOTE_CONNECT:
 
             if(lnr_accts != NULL)
             {
